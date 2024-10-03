@@ -14,8 +14,8 @@ body {
 }
 
 .menu-icon, .logo-right, .logo-central {
-    flex-grow: 0; /* NÃ£o permite que os itens cresÃ§am */
-    flex-shrink: 0; /* NÃ£o permite que os itens encolham */
+    flex-grow: 0; /* Não permite que os itens cresçam */
+    flex-shrink: 0; /* Não permite que os itens encolham */
 }
 
 .menu-icon, .logo-right {
@@ -23,20 +23,20 @@ body {
 }
 
 .logo-central {
-    flex-grow: 1; /* Permite que a logo central cresÃ§a e ocupe todo o espaÃ§o restante */
-    text-align: center; /* Centraliza a logo no espaÃ§o disponÃ­vel */
+    flex-grow: 1; /* Permite que a logo central cresça e ocupe todo o espaço restante */
+    text-align: center; /* Centraliza a logo no espaço disponível */
 }
 
 .material-symbols-outlined {
-    font-size: 24px; /* Ajuste o tamanho do Ã­cone conforme necessÃ¡rio */
+    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
 }
 
 .material-symbols-outlined2 {
-    font-size: 30px; /* Ajuste o tamanho do Ã­cone conforme necessÃ¡rio */
+    font-size: 30px; /* Ajuste o tamanho do ícone conforme necessário */
 }
 
 .logo-central img, .logo-right img {
-    height: 4vh; /* Ajuste a altura conforme necessÃ¡rio */
+    height: 4vh; /* Ajuste a altura conforme necessário */
 }
 
 
@@ -107,7 +107,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-left: 5%;
-    margin-right: 5%; /* Adicione margem Ã  direita para que o ">" nÃ£o fique colado na borda */
+    margin-right: 5%; /* Adicione margem à direita para que o ">" não fique colado na borda */
     margin-bottom: 15px;
     font-family: 'GellixMedium';
 }
@@ -137,7 +137,7 @@ body {
 .title {
     font-family: 'GellixMedium';
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     margin-left: 5%;
     margin-right: 5%;
     color: rgb(37, 37, 37);
@@ -188,22 +188,22 @@ body {
 .sizes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Centraliza os botÃµes e mantÃ©m espaÃ§o entre eles */
-    max-width: 500px; /* Largura mÃ¡xima do contÃªiner para alinhar os botÃµes corretamente */
-    margin: auto; /* Centraliza o contÃªiner na pÃ¡gina */
+    justify-content: space-around; /* Centraliza os botões e mantém espaço entre eles */
+    max-width: 500px; /* Largura máxima do contêiner para alinhar os botões corretamente */
+    margin: auto; /* Centraliza o contêiner na página */
 }
 
 .size-btn {
-    padding: 10px 10px; /* Ajusta o padding para melhorar a apresentaÃ§Ã£o */
-    margin: 5px; /* MantÃ©m uma margem entre os botÃµes */
+    padding: 10px 10px; /* Ajusta o padding para melhorar a apresentação */
+    margin: 5px; /* Mantém uma margem entre os botões */
     background-color: #ffffff;
     border: 2px solid #ddd;
     color: #171717;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     border-radius: 15px;
-    flex-basis: calc(20% - 10px); /* Calcula a largura de cada botÃ£o menos a margem */
-    text-align: center; /* Centraliza o texto dentro do botÃ£o */
+    flex-basis: calc(20% - 10px); /* Calcula a largura de cada botão menos a margem */
+    text-align: center; /* Centraliza o texto dentro do botão */
     font-family: 'GellixMedium';
 }
 
@@ -501,7 +501,7 @@ body {
 
 .material-symbols-outlined {
     font-size: 14px;
-    margin: 0 2px; /* Espaamento entre o texto e o Ã­cone */
+    margin: 0 2px; /* Espaamento entre o texto e o ícone */
 }
 
 .full-icon {
