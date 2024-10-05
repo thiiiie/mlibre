@@ -84,18 +84,27 @@
 
 <button class="pergunta-botao" id="tv" redirect-link="https://pay.hotmart.com/D95862143K?off=t4ghddj2">Comprar</button>
 
-<!-- <div class="promocao">
+<script>
+  document.getElementById("tv").addEventListener("click", function() {
+    // Pegue o valor do atributo personalizado "redirect-link"
+    var redirectLink = this.getAttribute("redirect-link");
+    // Redireciona o usuário para o link
+    window.location.href = redirectLink;
+  });
+</script>
+
+<div class="promocao">
      <p class="promotitle">Ofertas especiales 🔥</p>
-     <div class="button-container" href="#" onclick="window.open('https://pay.appsmercadrolivre.com/a6pVgd11VXB3k7B' + window.location.search, '_self')">
+     <div class="button-container" href="#" onclick="window.open('https://pay.hotmart.com/D95862143K?off=t4ghddj2' + window.location.search, '_self')">
         <button class="styled-button" style="background-color: #ffffff;">
         <span class="button-text">
         <span class="button-title" style="color: #0169EB">TOMA 3 UNIDADES</span>
-        <span class="button-subtitle" style="color: #0169EB">Por sólo R$ 168,62</span>
+        <span class="button-subtitle" style="color: #0169EB">Por sólo $ 187,80</span>
         </span>
         <span class="material-symbols-outlined" style="font-size: 32px; color: #0169EB;">sell</span>
         </button>
      </div>
-  </div> -->
+  </div> 
 
 <div class="info-container">
     <div class="info-item">
