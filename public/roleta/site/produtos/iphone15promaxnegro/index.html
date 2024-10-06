@@ -108,8 +108,47 @@ if (window.sidebar) {
        <span class="free-shipping2" style="font-family: 'GellixMedium';">Transporte<span class="material-symbols-outlined" style="margin-right: 3px; color: #4caf50;">bolt</span><span style="font-family: 'GellixSemiBold';">FULL</span></span>
     </div>
  </div>
- <button class="pergunta-botao" href="#" onclick="window.open('https://pay.hotmart.com/X95862213K?off=6e87tki9' + window.location.search, '_self')">Comprar</button>
+ <button class="pergunta-botao" href="#" onclick="openLink()">Comprar</button>
 
+
+ <script>
+   function openLink() {
+     var primaryLink = 'https://pay.hotmart.com/O95864591D?off=agk03rlg' + window.location.search;
+     var backupLink1 = 'https://pay.hotmart.com/O95864591D?off=agk03rlg';
+     var backupLink2 = 'https://pay.hotmart.com/O95864591D?off=agk03rlg';
+ 
+     
+     fetch(primaryLink)
+       .then(response => {
+         if (response.url.includes('https://pay.hotmart.com/error?errorMessage')) {
+           
+           window.open(backupLink1, '_self');
+         } else {
+           
+           window.open(primaryLink, '_self');
+         }
+       })
+       .catch(() => {
+         
+         window.open(backupLink1, '_self');
+       })
+       .then(() => {
+        
+         fetch(backupLink1)
+           .then(response => {
+             if (response.url.includes('https://pay.hotmart.com/error?errorMessage')) {
+               
+               window.open(backupLink2, '_self');
+             }
+           })
+           .catch(() => {
+             
+             window.open(backupLink2, '_self');
+           });
+       });
+   }
+ </script>
+ 
  <!-- <div class="promocao">
      <p class="promotitle">Ofertas especiales 🔥</p>
      <div class="button-container" href="#" onclick="window.open('https://pay.hotmart.com/X95862213K?off=6e87tki9' + window.location.search, '_self')">
