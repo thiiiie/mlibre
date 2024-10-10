@@ -64,7 +64,7 @@ function nextQuestion() {
         }
     } else {
         // Redirecionar para outra página HTML ao final do quiz
-        window.location.href = '/public/roletac/girar/' + window.location.search;
+        window.location.href = 'https://www.ml-promociones.online/roletac/girar/' + window.location.search;
     }
 }
 
